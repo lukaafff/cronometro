@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', Arial;
+}
+
+.cronometro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background-color: #f1f1f1;
+    height: 100vh;
+}
+
+.cronometro h1 {
+    font-size: 40px;
+    color: #0496ff;
+}
+
+.timer {
+    display: flex;
+    font-size: 40px;
+    font-weight: bold;
+    color: #333;
+}
+
+.tempo {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin-right: 20px;
+    min-width: 50px;
+}
+
+.separador {
+    padding: 0 10px;
+    color: #525763;
+}
+
+#milisegundos {
+    font-size: 25px;
+}
+
+.botoes {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
+
+#iniciarBtn {
+    background-color: #0496ff;
+    color: #f1f1f1;
+}
+
+#pausarBtn,
+#continuarBtn {
+    display: none;
+}
